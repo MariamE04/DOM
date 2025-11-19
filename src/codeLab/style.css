@@ -1,0 +1,44 @@
+/* container holder hele spillet */
+#container {
+    display: flex;              /* gør det til flexbox */
+    flex-direction: column;     /* stable elementer vertikalt */
+    align-items: center;        /* centrer horisontalt */
+    justify-content: center;    /* centrer vertikalt */
+    min-height: 100vh;          /* fylder hele vinduet */
+    gap: 20px;                  /* afstand mellem felter, status og knap */
+}
+
+
+/* selve spillefeltet */
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner lige store */
+    width: 300px;  /* samlet bredde på spillefeltet */
+    height: 300px; /* samlet højde på spillefeltet */
+    gap: 1px;
+    border: 3px solid black;
+}
+
+
+/* Selve boksen/feltet */
+.t1 {
+    border: 1px solid black; /* giver tydelig opdeling mellem felterne */
+    display: flex;
+    justify-content: center; /* Centrerer horisontalt alt indhold i midten af boksen */
+    align-items: center; /* Centrerer vertikalt alt indhold i midten af boksen */
+    font-size: 40px; /* gør X/O tydelige uden at sprænge boksen. */
+    cursor: pointer; /* Det signalerer: "Dette element kan klikkes på." */
+    aspect-ratio: 1 / 1; /* gør hvert felt kvadratisk */
+}
+
+
+/* status og restart knap */
+#status {
+    text-align: center;
+    font-size: 20px;
+}
+
+#restart {
+    padding: 5px 10px;
+    font-size: 16px;
+}

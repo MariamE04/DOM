@@ -35,6 +35,8 @@ var namesArray = ["Lars", "Peter", "Jan", "Ian"];
 var htmlString = createListHTML(namesArray);
 console.log(htmlString);
 
+
+
 // 1.4
 // 1.4.1
 let cars = [
